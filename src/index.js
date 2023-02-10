@@ -18,13 +18,13 @@ function getExchange(country) {
 
 // UI Logic
 
-function printElements(actualAmount) {
-  document.querySelector('#showExchangeRates').innerText = `The converted amount is ${actualAmount}.`;
-}
-
-// function printElements(response) {
-//   // document.querySelector('#showExchangeRates').innerText = `The current exchange rate is ${response.conversion_rate}.`;
+// function printElements(actualAmount) {
+//   document.querySelector('#showExchangeRates').innerText = `The converted amount is ${actualAmount}.`;
 // }
+
+function printElements(response) {
+  document.querySelector('#showExchangeRates').innerText = `The exchanged amount is ${response.conversion_result}.`;
+}
 
 function printError() {
   document.querySelector('#showExchangeRates').innerText = `There was an error.`; // update this 
@@ -35,10 +35,10 @@ function handleFormSubmission(event) {
   const amount = document.querySelector('#number-input').value;
   const country = document.querySelector('#currency-type').value;
   document.querySelector('#number-input').value = null;
-  getExchange(country);
+  getExchange(country, amount);
 
-  let actualAmount = (amount * getExchange(country));
-  return actualAmount;
+  // let actualAmount = (amount * getExchange(country));
+  // return actualAmount; // not needed, found the url that includes the converted amount
 
 }
 

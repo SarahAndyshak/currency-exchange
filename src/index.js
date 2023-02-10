@@ -5,8 +5,8 @@ import ExchangeService from './js/ExchangeService';
 
 // Business Logic
 
-function getExchange(amount) {
-  ExchangeService.getExchange(amount)
+function getExchange(amount, country) {
+  ExchangeService.getExchange(amount, country)
     .then(function(response) {
       if(response.main) {
         printElements(response, amount);

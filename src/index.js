@@ -29,7 +29,8 @@ function printError() {
 function handleFormSubmission(event) {
   event.preventDefault();
   const amount = document.querySelector('#number-input').value;
-  const country = document.querySelector('#currency-type').value;
+  const country = document.querySelector('#currency-type').value.toUpperCase();
+  // const country = document.querySelector('#currency-type').value;
   document.querySelector('#number-input').value = null;
   getExchange(country, amount);
 }

@@ -1,8 +1,8 @@
-# (Application Name)
+# Currency Exchange
 
-#### (Brief Description of Application)
+#### A website for checking currency exchange rates
 
-#### By (Your Name Here)
+#### By Sarah Andyshak
 
 ## Technologies Used
 
@@ -20,12 +20,12 @@
 * node.js
 
 ## Description
+An application built to practice using APIs in connection with study at Epicodus. The user can enter an amount in US dollars and receive an up-to-date exchange rate for selected currencies. 
 
 ## Setup/Installation Requirements
 
 * Clone the repository to your computer.
-<!-- * If needed, sign up for an account with API at the developer site.
-* Get an API key by clicking "Create an App." -->
+* Navigate to [ExchangeRate-API](https://app.exchangerate-api.com/), enter your email, click the "Get Free Key" button, and sign up for a free account.
 * Create a file '.env' and place it in the root folder of the downloaded repository.
 Include API_KEY={your API key} in the text of the .env file.
 * Navigate to the root folder of this downloaded repository in your terminal.

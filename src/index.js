@@ -27,7 +27,7 @@ function printElements(actualAmount) {
 // }
 
 function printError() {
-  document.querySelector('#showExchangeRates').innerText = `There was an error.`; // update this
+  document.querySelector('#showExchangeRates').innerText = `There was an error.`; // update this 
 }
 
 function handleFormSubmission(event) {

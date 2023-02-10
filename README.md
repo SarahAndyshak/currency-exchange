@@ -26,6 +26,7 @@ An application built to practice using APIs in connection with study at Epicodus
 
 * Clone the repository to your computer.
 * Navigate to [ExchangeRate-API](https://app.exchangerate-api.com/), enter your email, click the "Get Free Key" button, and sign up for a free account.
+* Look for the activation email and be sure to activate your account.
 * Create a file '.env' and place it in the root folder of the downloaded repository.
 Include API_KEY={your API key} in the text of the .env file.
 * Navigate to the root folder of this downloaded repository in your terminal.

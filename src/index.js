@@ -5,10 +5,10 @@ import ExchangeService from './js/ExchangeService';
 
 // Business Logic
 
-function getExchange(country) {
-  ExchangeService.getExchange(country)
+function getExchange(country, amount) {
+  ExchangeService.getExchange(country, amount)
     .then(function(response) {
-      if(response.conversion_rate) {
+      if(response.conversion_result) {
         printElements(response);
       } else {
         printError();

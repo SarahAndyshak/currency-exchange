@@ -27,7 +27,7 @@ function printElements(response) {
 }
 
 function printError() {
-  document.querySelector('#showExchangeRates').innerText = `There was an error.`; // update this 
+  document.querySelector('#showExchangeRates').innerText = `There was an error.`; // update this once CORS issue is solved???
 }
 
 function handleFormSubmission(event) {

@@ -37,8 +37,7 @@ Include API_KEY={your API key} in the text of the .env file.
 
 ## Known Bugs
 
-* _Any known issues_
-* _should go here_
+* Application does not currently work, possibly in conjunction with CORS issues.
 
 ## License
 Enjoy the site! If you have questions or suggestions for fixing the code, please contact me!

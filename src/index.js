@@ -18,6 +18,21 @@ function getExchange(amount) {
 
 // UI Logic
 
-function printElements(amount) {
-  document.querySelector('#showExchangeRates').innerText = `The current exchange rate is {}`
+function printElements(response) {
+  document.querySelector('#showExchangeRates').innerText = `The current exchange rate is ${response.main}.`;
 }
+
+function printError() {
+  document.querySelector('#showExchangeRates').innerText = `There was an error ${error}.`;
+}
+
+function handleFormSubmission(event) {
+  event.preventDefault();
+  const amount = document.querySelector('#number-input').ariaValueMax;
+  document.querySelector('#number-input').value = null;
+  getExchange(amount);
+}
+
+window.addEventListener("load", function() {
+  document.querySelector("#currency-form").addEventListener("submit", handleFormSubmission);
+});

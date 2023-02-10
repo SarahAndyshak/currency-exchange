@@ -5,11 +5,11 @@ import ExchangeService from './js/ExchangeService';
 
 // Business Logic
 
-function getExchange(amount, country) {
-  ExchangeService.getExchange(amount, country)
+function getExchange(country) {
+  ExchangeService.getExchange(country)
     .then(function(response) {
       if(response.main) {
-        printElements(response, amount);
+        printElements(response, country);
       } else {
         printError(response);
       }
@@ -28,7 +28,7 @@ function printError() {
 
 function handleFormSubmission(event) {
   event.preventDefault();
-  const amount = document.querySelector('#number-input').ariaValueMax;
+  const amount = document.querySelector('#number-input').value;
   document.querySelector('#number-input').value = null;
   getExchange(amount);
 }

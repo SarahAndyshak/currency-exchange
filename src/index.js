@@ -5,6 +5,17 @@ import ExchangeService from './js/ExchangeService';
 
 // Business Logic
 
+function getExchange(amount) {
+  ExchangeService.getExchange(amount)
+    .then(function(response) {
+      if(response.main) {
+        printElements(response, amount);
+      } else {
+        printError(response);
+      }
+    });
+}
+
 // UI Logic
 
 function printElements(amount) {

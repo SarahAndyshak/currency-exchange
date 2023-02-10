@@ -18,16 +18,12 @@ function getExchange(country, amount) {
 
 // UI Logic
 
-// function printElements(actualAmount) {
-//   document.querySelector('#showExchangeRates').innerText = `The converted amount is ${actualAmount}.`;
-// }
-
 function printElements(response) {
   document.querySelector('#showExchangeRates').innerText = `The exchanged amount is ${response.conversion_result}.`;
 }
 
 function printError() {
-  document.querySelector('#showExchangeRates').innerText = `There was an error.`; // update this once CORS issue is solved???
+  document.querySelector('#showExchangeRates').innerText = `There was an error: please enter a number above 0.`; // can't get response statusText to show up
 }
 
 function handleFormSubmission(event) {
@@ -36,10 +32,6 @@ function handleFormSubmission(event) {
   const country = document.querySelector('#currency-type').value;
   document.querySelector('#number-input').value = null;
   getExchange(country, amount);
-
-  // let actualAmount = (amount * getExchange(country));
-  // return actualAmount; // not needed, found the url that includes the converted amount
-
 }
 
 window.addEventListener("load", function() {

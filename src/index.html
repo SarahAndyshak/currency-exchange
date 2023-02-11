@@ -4,28 +4,48 @@
   <title>International Currency Exchange</title>
 <body>
   <h1>International Currency Exchange Rates</h1>
+  <h3> 🌎 🌍 🌏 </h3>
   <p>Enter the amount in US dollars, select your desired currency, and click submit.</p>
+  <p>Find the 3 letter codes for currencies <a href="https://en.wikipedia.org/wiki/ISO_4217">here.</a></p><br>
   <form id="currency-form">  
     <label for="number-input">Input your amount in USD</label>
-    <input id="number-input" type="number"><br>
+    <input id="number-input" type="number"><br><br>
     
     <!-- Using dropdown menu -->
-    <!-- <select id="currency-type">
+    <select id="currency-type">
       <option value="USD">US Dollar</option>
+      <option value="AUD">Australian Dollar</option>
+      <option value="BAM">Bosnia and Herzegovina Mark</option>
       <option value="CAD">Canadian Dollar</option>
       <option value="CZK">Czech Koruna</option>
+      <option value="DKK">Danish Krone</option>
       <option value="EUR">Euro</option>
+      <option value="FJD">Fiji Dollar</option>
       <option value="GBP">Pound Sterling</option>
+      <option value="HNL">Honduran Lempira</option>
+      <option value="INR">Indian Rupee</option>
+      <option value="JPY">Japanese Yen</option>
+      <option value="KRW">South Korean Won</option>
+      <option value="LSL">Lesotho Loti</option>
+      <option value="MXN">Mexican Peso</option>
+      <option value="NOK">Norwegian Krone</option>
+      <option value="OMR">Omani Rial</option>
+      <option value="PLN">Polish Złoty</option>
+      <option value="RWF">Rwandan Franc</option>
+      <option value="SEK">Swedish Krona</option>
+      <option value="TJS">Tajikistani Somoni</option>
       <option value="UAH">Ukrainian Hryvnia</option>
-    </select> -->
+      <option value="VUV">Vanuatu Vatu</option>
+      <option value="YER">Yemeni Rial</option>
+      <option value="ZWL">Zimbabwean Dollar</option>
+    </select>
 
-    <!-- Using enter form -->
-    <label for="currency-type">Input the 3 letter code for your currency in capital letters</label>
-    <input id="currency-type" type="text">
+    <!-- Using text entry form to check errors-->
+    <!-- <label for="currency-type">Input the 3 letter code for your currency in capital letters</label>
+    <input id="currency-type" type="text"> -->
 
-    <button type="submit" id="exchange-button">Show exchange rates</button>
+    <button type="submit" id="exchange-button">Submit</button><br><br>
     <div id="showExchangeRates"></div>
   </form>
-  <p>Find the 3 letter codes for currencies <a href="https://en.wikipedia.org/wiki/ISO_4217">here.</a></p>
 </body>
 </html>

@@ -23,7 +23,7 @@ function printElements(response) {
 }
 
 function printError() {
-  document.querySelector('#showExchangeRates').innerText = `There was an error: please enter a number above 0.`; // can't get response statusText to show up
+  document.querySelector('#showExchangeRates').innerText = `There was an error. Please enter a number above 0 or a valid 3 letter currency code. Please check your currency code using the link below.`; // can't get response statusText to show up
 }
 
 function handleFormSubmission(event) {
